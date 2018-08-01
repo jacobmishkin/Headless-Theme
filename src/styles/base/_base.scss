@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+section,
+footer {
+    padding: 1em;
+}
+
+header,
+.hero {
+    background-color: $color-black;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about_me,
+.projects,
+.contact,
+.blog,
+.post,
+.blog_index,
+.page_container {
+    background-color: #EAE7DC;
+    text-align: center;
+    h2,
+    h1 {
+        font-size: 3.5rem;
+        margin: 1em 0;
+        border-bottom: 1px solid black;
+        display: inline-block;
+    }
+}

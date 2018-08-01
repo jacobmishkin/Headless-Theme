@@ -1,0 +1,132 @@
+.btn_border,
+.navBtn {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_border {
+    background-color: $headerColor;
+}
+
+@media screen and (min-width: 650px) {
+    .navBtn {
+        background-color: $headerColor;
+    }
+}
+
+.contact_wrapper,
+.content_wrapper,
+.blog_wrapper {
+    .top {
+        top: 0;
+        right: 0;
+    }
+    .right {
+        top: auto;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 1px;
+    }
+    .left {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 1px;
+    }
+    .bottom {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+/*
+ *
+ *  Button Hover Effect
+ *
+ */
+
+.btn,
+.project_link {
+    &:hover,
+    &:focus {
+        .top {
+            width: 0;
+        }
+        .right {
+            height: 0;
+        }
+        .bottom {
+            width: 0;
+        }
+        .left {
+            height: 0;
+            top: 0;
+            bottom: auto;
+        }
+    }
+}
+
+
+/*
+ *
+ *  Nav Menu Hover Effect
+ *
+ */
+
+.primary_navigation {
+    .top {
+        top: 0;
+        left: 0;
+        width: 0;
+    }
+    .right {
+        top: 0;
+        bottom: auto;
+        right: 0;
+        height: 0;
+        width: 1px;
+    }
+    .left {
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 1px;
+    }
+    .bottom {
+        bottom: 0;
+        right: 0;
+        width: 0;
+    }
+}
+
+
+/*
+ *
+ * Nav Button Hover Effect
+ *
+ */
+
+.desktop_menu a {
+    &:hover,
+    &:focus {
+        .top {
+            width: 100%;
+        }
+        .right {
+            height: 100%;
+        }
+        .left {
+            height: 100%;
+        }
+        .bottom {
+            width: 100%;
+        }
+    }
+}

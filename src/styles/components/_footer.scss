@@ -1,0 +1,11 @@
+footer {
+    background-color: $color-black;
+    .copyright {
+        text-align: center;
+        color: $themeColor-Light;
+        padding: 30px;
+        span {
+            margin-left: .2em;
+        }
+    }
+}

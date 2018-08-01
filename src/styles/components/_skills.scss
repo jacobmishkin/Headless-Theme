@@ -1,0 +1,33 @@
+.skills {
+    max-width: 600px;
+    padding-left: 0;
+    margin: 0 auto;
+    .skill {
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 1.4;
+        position: relative;
+        transition: color 0.5s;
+        padding: .3em;
+        cursor: pointer;
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 50%;
+            opacity: .3;
+            transition: all .8s ease-in-out;
+        }
+        &:hover {
+            color: $headerColor;
+        }
+        &:hover:before {
+            background-color: $headerColor;
+            right: 0;
+            width: 100%;
+        }
+    }
+}

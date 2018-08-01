@@ -1,0 +1,53 @@
+.projects {
+    text-align: center;
+    background-color: $themeColor-Light;
+}
+
+.project {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    overflow: hidden;
+    border: 1px solid $themeColor-Light;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &:before {
+        left: 0;
+        background-color: rgba(1, 4, 0, .6);
+    }
+    &:after {
+        right: 100%;
+        background-color: $color-black;
+        transition: .2s;
+        z-index: 6;
+    }
+    &:hover::after {
+        right: 0;
+    }
+}
+
+.omar-samad {
+    background-position: center center;
+}
+
+.card_link {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    overflow: hidden;
+    h3 {
+        color: $themeColor-Light;
+        font-size: 2.5rem;
+    }
+}

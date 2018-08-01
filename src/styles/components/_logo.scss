@@ -1,0 +1,30 @@
+.site_logo,
+.logo {
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.logo_text {
+    font-family: 'Cervo';
+    font-size: 64px;
+    fill: $themeColor-Light;
+    transition: fill .5s;
+}
+
+.circle {
+    fill: none;
+    stroke: $themeColor-Light;
+    transition: stroke .5s;
+}
+
+
+/*
+* Logo Animation
+*/
+
+.logo:hover {
+    .circle {
+        stroke: $headerColor;
+    }
+}

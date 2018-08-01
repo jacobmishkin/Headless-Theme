@@ -1,0 +1,29 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    box-shadow: 1px 3px 11px -2px rgba(62, 62, 62, 0.55);
+    p {
+        font-size: 1.4em;
+        text-align: left;
+        color: $themeColor-Light;
+        margin-bottom: .3em;
+    }
+    .hero_container {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 950px) {
+        min-height: 50vh;
+        h1 {
+            font-size: 5em;
+        }
+        p {
+            font-size: 2em;
+        }
+        .hero_container {
+            width: 980px;
+        }
+    }
+}

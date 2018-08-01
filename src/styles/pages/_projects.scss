@@ -1,0 +1,40 @@
+.page_container {
+    background-color: #EAE7DC;
+    .content_wrapper {
+        h2 {
+            text-align: center;
+            margin: 1rem 0;
+            font-size: 3rem;
+        }
+        .content {
+            text-align: left;
+            p {
+                font-size: 1em;
+                line-height: 1.65;
+                margin-bottom: 1em;
+            }
+        }
+    }
+    .btn {
+        width: 150px;
+    }
+    .project_image {
+        margin-top: 1em;
+    }
+    @media screen and (min-width: 768px) {
+        .content_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .content {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .project_image {
+            width: 45%;
+            margin: 0 auto;
+            padding-top: 2em;
+        }
+    }
+}

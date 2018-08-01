@@ -1,0 +1,30 @@
+$theme-font: 'Cervo',
+serf;
+h1,
+h2,
+h3,
+h4 {
+    font-family: $theme-font;
+    letter-spacing: 1.64px;
+    word-spacing: 0px;
+    font-weight: 100;
+    color: $headerColor;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p,
+span {
+    font-family: 'Open Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
