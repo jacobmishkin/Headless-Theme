@@ -23,7 +23,8 @@
         "next": "latest",
         "react": "^16.0.0",
         "react-burger-menu": "^2.5.2",
-        "react-moment": "^0.7.9"
+        "react-moment": "^0.7.9",
+        "webpack-hot-middleware": "^2.22.3"
     },
     "devDependencies": {
         "autoprefixer": "7.1.5",

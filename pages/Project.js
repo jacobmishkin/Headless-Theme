@@ -25,10 +25,12 @@ class Project extends Component {
           <div className="content_wrapper">
             <div className="content">
               <p>{project.content.rendered}</p>
-              <a className="btn" href={project.acf.link} target="_blank">
+             { (project.acf.link) ?
+               <a className="btn" href={project.acf.link} target="_blank">
                 Visit Site
                 <LinkBorder btnType={'btn_border'} />
               </a>
+             : null }
             </div>
           </div>
           {project.acf.project_images.map((image, index) => (
