@@ -29,7 +29,6 @@ class Menu extends Component {
   toggleMenu() {
     this.setState({menuOpen: !this.state.menuOpen});
   }
-
   getSlug(url) {
     const parts = url.split('/');
     return parts.length > 2 ? parts[parts.length - 2] : '';
