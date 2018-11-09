@@ -4,125 +4,117 @@
 */
 
 nav a {
-    color: $themeColor-Light;
+  color: $themeColor-Light;
+  font-family: $theme-font;
 }
 
 .mobile_navigation {
-    li {
-        padding: 1.5em 0;
-        text-align: center;
-        border-bottom: 1px solid rgba(224, 218, 218, 0.08);
-        &:first-child {
-            border-top: 1px solid rgba(224, 218, 218, 0.08);
-        }
+  li {
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(224, 218, 218, 0.08);
+    &:first-child {
+      border-top: 1px solid rgba(224, 218, 218, 0.08);
     }
-    @media screen and (min-width: 650px) {
-        display: none;
-    } //Removing border styles on Mobile
-    .border {
-        display: none;
+  }
+  @media screen and (min-width: 650px) {
+    display: none;
+  } //Removing border styles on Mobile
+  .border {
+    display: none;
+  }
+  nav a {
+    font-weight: 700;
+    font-size: 1.15em;
+    letter-spacing: 1.24px;
+    &:hover,
+    &:focus {
+      color: $headerColor;
     }
-    nav a {
-        font-weight: 700;
-        font-size: 1.15em;
-        letter-spacing: 1.24px;
-        &:hover,
-        &:focus {
-            color: $headerColor;
-        }
-    }
+  }
 }
 
 .desktop_menu {
-    text-align: center;
-    display: none;
-    @media screen and (min-width: 650px) {
-        display: flex;
-        margin-top: 2em;
+  text-align: center;
+  display: none;
+  @media screen and (min-width: 650px) {
+    display: flex;
+    margin-top: 2em;
+  }
+  li {
+    &:last-child {
+      margin-right: 1em;
     }
-    li {
-        &:last-child {
-            margin-right: 1em;
-        }
-        a {
-            font-size: 1.3em;
-            position: relative;
-            padding: .5em;
-            border: 1px solid rgba(224, 218, 218, 0.08);
-            border-right: none;
-        } // &:last-child a {
-        //     border-right: 1px solid rgba(224, 218, 218, 0.08);
-        // }
-    }
+    a {
+      font-size: 1.3em;
+      position: relative;
+      padding: .5em;
+      border: 1px solid rgba(224, 218, 218, 0.08);
+      border-right: none;
+    } // &:last-child a {
+    //     border-right: 1px solid rgba(224, 218, 218, 0.08);
+    // }
+  }
 }
-
 
 /* Position and sizing of burger button */
 
 .bm-burger-button {
-    position: absolute;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 36px;
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
 }
-
 
 /* Color/shape of burger icon bars */
 
 .bm-burger-bars {
-    background: $themeColor-Light;
+  background: $themeColor-Light;
 }
-
 
 /* Position and sizing of clickable cross button */
 
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
-
 
 /* Color/shape of close button cross */
 
 .bm-cross {
-    background: #bdc3c7;
+  background: #bdc3c7;
 }
-
 
 /* General sidebar styles */
 
 .bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
 }
-
 
 /* Morph shape necessary with bubble or elastic */
 
 .bm-morph-shape {
-    fill: #373a47;
+  fill: #373a47;
 }
-
 
 /* Wrapper for item list */
 
 .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
+  color: #b8b7ad;
+  padding: 0.8em;
 }
-
 
 /* Individual item */
 
 .bm-item {
-    display: inline-block;
+  display: inline-block;
 }
-
 
 /* Styling of overlay */
 
 .bm-overlay {
-    background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
