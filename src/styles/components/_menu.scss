@@ -6,6 +6,8 @@
 nav a {
   color: $themeColor-Light;
   font-family: $theme-font;
+  text-transform: uppercase;
+  letter-spacing: 1.5452px;
 }
 
 .mobile_navigation {
@@ -48,7 +50,7 @@ nav a {
     a {
       font-size: 1.3em;
       position: relative;
-      padding: .5em;
+      padding: .7em .5em .5em .5em;
       border: 1px solid rgba(224, 218, 218, 0.08);
       border-right: none;
     } // &:last-child a {
