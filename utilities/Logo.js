@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 const Logo = () => (
   <div className="logo">
-    <svg width="84" height="84" viewBox="0 0 84 84">
+    <svg width="87" height="87" viewBox="-2 -3 86 86">
       <title id="site_logo">portfolio Logo</title>
       <circle
         className="circle"
