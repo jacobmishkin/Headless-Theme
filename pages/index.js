@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Layout from '../components/Layout.js';
 import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
 import PageWrapper from '../components/PageWrapper.js';
-import {Config} from '../config.js';
+import { Config } from '../config.js';
 import About from '../components/About.js';
 import Contact from '../components/Contact.js';
 import Hero from '../components/Hero.js';
@@ -28,11 +28,11 @@ class Index extends Component {
     const projectRes = await fetch(`${Config.apiUrl}/wp-json/wp/v2/projects`);
     const project = await projectRes.json();
 
-    return {about, contact, blog, project};
+    return { about, contact, blog, project };
   }
 
   render() {
-    const {about, contact, blog, project} = this.props;
+    const { about, contact, blog, project } = this.props;
 
     return (
       <Layout {...this.props}>
@@ -60,7 +60,6 @@ class Index extends Component {
             isHomePage={true}
           />
         ))}
-
         <Contact
           image={contact.acf.image}
           tagline="Jacob Mishkin"
